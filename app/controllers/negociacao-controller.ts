@@ -8,7 +8,7 @@ export class NegociacaoController {
         this.negociacaoService = new NegociacaoService()
     }
 
-    adiciona(data: Date, quantidade: number, valor: number): void {
+    adiciona(data: HTMLInputElement, quantidade: HTMLInputElement, valor: HTMLInputElement): void {
         this.negociacaoService.adiciona(data, quantidade, valor)
     }
 }

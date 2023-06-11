@@ -10,11 +10,9 @@ form.addEventListener('submit', (event: Event) => {
     const quantidadeInput = document.getElementById('quantidade') as HTMLInputElement;
     const valorInput = document.getElementById('valor') as HTMLInputElement;
 
-    const regularExpression = /-/g;
+    negociacaoController.adiciona(dataInput, quantidadeInput, valorInput);
 
-    const data = new Date(dataInput.value.replace(regularExpression, ','))
-    const quantidade = parseInt(quantidadeInput.value)
-    const valor = parseFloat(valorInput.value)
-
-    negociacaoController.adiciona(data, quantidade, valor)
+    dataInput.value = '';
+    quantidadeInput.value = '';
+    valorInput.value = '';
 });
