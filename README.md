@@ -1,10 +1,8 @@
 <div align="center">
     <p>
-        <a href="https://github.com/thiiagoms/alura-typescript-path">
-            <img src="assets/img/alura.png" alt="Logo" width="80" height="80">
-            <img src="assets/img/Handshake.gif" alt="Logo" width="170" height="80">
-            <img src="assets/img/typescript.png" alt="Logo" width="80" height="80">
-        </a>
+      <img src="./assets/img/alura.png" alt="Logo" width="80" height="80">
+      <img src="./assets/img/handshake.gif" alt="Logo" width="170" height="80">
+      <img src="./assets/img/typescript.png" alt="Logo" width="80" height="80">
     </p>
 </div>
 
@@ -12,7 +10,7 @@
 
 - [Dependências :heavy_plus_sign:](#dependências)
 - [Instalação :package:](#instalação)
-- [Uso :run:](#uso)
+- [Uso :runner:](#uso)
 
 ## Dependências
  * NodeJs >= 20.0.0
