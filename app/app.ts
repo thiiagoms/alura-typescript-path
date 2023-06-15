@@ -1,4 +1,5 @@
 import { NegociacaoController } from "./controllers/negociacao-controller.js";
+import { NegociacoesView } from "./views/negociacoes-view.js";
 
 const form = document.querySelector('.form')
 const negociacaoController = new NegociacaoController();
@@ -16,3 +17,6 @@ form.addEventListener('submit', (event: Event) => {
     quantidadeInput.value = '';
     valorInput.value = '';
 });
+
+const negocicoesView = new NegociacoesView('#negociacoesView');
+negocicoesView.update()
