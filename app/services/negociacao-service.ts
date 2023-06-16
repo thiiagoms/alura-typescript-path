@@ -3,7 +3,7 @@ import { Negociacoes } from "../models/negociacoes.js";
 
 export class NegociacaoService {
 
-    constructor(private negociacoes: Negociacoes = new Negociacoes()) { }
+    constructor(private _negociacoes: Negociacoes = new Negociacoes()) { }
 
     private criaNegociacao(data: Date, quantidade: number, valor: number): Negociacao {
         return new Negociacao(data, quantidade, valor);
@@ -19,9 +19,10 @@ export class NegociacaoService {
 
         const negociacao = this.criaNegociacao(data, quantidade, valor);
         this.negociacoes.adiciona(negociacao)
+    }
 
-        console.log('Lista de negociacoes...')
-        console.log(this.lista());
+    get negociacoes(): Negociacoes {
+        return this._negociacoes
     }
 
     lista(): readonly Negociacao[] {
